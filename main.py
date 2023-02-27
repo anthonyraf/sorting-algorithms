@@ -8,11 +8,16 @@ if __name__ == '__main__':
     l = list(range(10))
     random.shuffle(l)
 
-    qs = QuickSort(l).sort()
-    ss = SelectionSort(l).sort()
-    bs = BubbleSort(l).sort()
+    qs = QuickSort(l)
+    qs.sort()
+    
+    ss = SelectionSort(l)
+    ss.sort()
+    
+    bs = BubbleSort(l)
+    bs.sort()
 
     print(qs)
     print(ss)
     print(bs)
-    
+

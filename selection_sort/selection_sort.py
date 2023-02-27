@@ -18,6 +18,9 @@ class SelectionSort:
 
             self.list[min_index] = self.list[unsorted_index]
             self.list[unsorted_index] = min
+    
+    def __repr__(self) -> str:
+        return self.list.__repr__()
 
 
 if __name__ == '__main__':

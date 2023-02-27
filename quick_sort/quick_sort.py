@@ -28,6 +28,9 @@ class QuickSort:
             self.qsort(l, imin, a+imin-1)
         if imax > a+imin+1:
             self.qsort(l, a+imin+1, imax)
+
+    def __repr__(self) -> str:
+        return self.list.__repr__()
         
 if __name__ == '__main__':
     l = list(range(10))

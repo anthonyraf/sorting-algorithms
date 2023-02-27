@@ -15,6 +15,9 @@ class BubbleSort:
             
             if permutations in [0,1]:
                 break
+    
+    def __repr__(self) -> str:
+        return self.list.__repr__()
 
 if __name__ == "__main__":
     l = list(range(10))
